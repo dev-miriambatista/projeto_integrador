@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="produtos.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<header>
+  <img id="logo" src="image/logotipo.jpeg" alt="logo_da_ac_farma">
+
+  <ul class="container_menu">
+    <li class="item_menu"><a href="index.html">DASHBOARD</a></li>
+
+    <li class="item_menu">
+      <label for="RELATORIO"></label>
+      <select name="relatorio" id="RELATORIO" title="Selecione o tipo de relatório"
+        onchange="if(this.value) window.location.href=this.value;">
+        <option value="">RELATÓRIO</option>
+        <option value="produtos.html">PRODUTOS</option>
+        <option value="precos.html">PREÇOS</option>
+        <option value="categorias.html">CATEGORIAS</option>
+        <option value="fornecedores.html">FORNECEDORES</option>
+        <option value="estoque_minimo.html">ESTOQUE MÍNIMO</option>
+        <option value="cod_prod.html">COD PROD</option>
+        <option value="lucro.html">LUCRO</option>
+        <option value="mais_vendidos.html">+ VENDIDOS</option>
+      </select>
+    </li>
+
+    <li class="item_menu"><a href="novo_produto.html">NOVO PRODUTO</a></li>
+    <li class="item_menu"><a href="fornecedor.html">FORNECEDORES</a></li>
+  </ul>
+
+</header>
+
+<body <main>
+  <div id="container_produtos">
+    <h1>Lista de Produtos</h1>
+    <ul id="lista_produtos" class="lista-estilizada"></ul>
+  </div>
+  </main>
+  <script src="script.js"></script>
+  <footer>
+    <p>AC FARMA</p>
+
+  </footer>
+
+</body>
+
+</html>
