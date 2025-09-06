@@ -25,6 +25,14 @@ header {
     color: #1a1717;
 }
 
+h1{
+    font: normal bolder 1.5em Arial, sans-serif;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
 .container_menu {
     display: flex;
     justify-content: flex-end;
@@ -39,7 +47,12 @@ header {
     border-style: none;
     border-radius: 0.5em;
     margin-left: 3vw;
+<<<<<<< HEAD
     color:#ffffff
+=======
+    width: 8vw;
+
+>>>>>>> f8c8532 (Adicionar nova página de produto com formulário e estilização; atualizar dashboard com ícones e informações dinâmicas)
 }
 
 .item_menu:hover {
@@ -108,16 +121,8 @@ main {
     margin: 3%;
     text-decoration: none;
     transition: all 0.5s ease;
-    box-shadow: 5px 1px 5px #9b9da1;
+    box-shadow: 1px 5px 20px #9b9d;
     text-shadow: 1px 1px 2px #00000080;
-    transition: all 0.5s ease;
-}
-
-.botao__dashboard:hover {
-    font: normal bolder 0.9em Arial, sans-serif;
-    transition: all 0.5s ease;
-    padding: 1%;
-    transform: scale(1.1);
 }
 
 #btn_total_produtos {
@@ -129,7 +134,7 @@ main {
     background-color: #50d3ff;
 }
 
-#btn_estoque_baixo {
+#btn_fornecedores {
     background-color: #fa57c4;
 }
 
@@ -138,27 +143,51 @@ main {
 }
 
 #btn_movimentacoes {
-    background-color: rgb(166, 87, 255);
+    background-color: #a657ff;
 }
 
 #btn_alerta_estoque {
     background-color: #ff4848;
 }
 
-select {
+.header_card_dashboard {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    font-family: Outfit, sans-serif;
+    
+}
+.card_item_dashboard {
+    font: normal bolder 2em Outfit, sans-serif;
+    width: 20vw;
+    height: 22vh;
+    text-shadow: 1px 1px 8px #31303080;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.bi {
+    padding: 3%;
+    font-size: 4em;
+    border-radius: 0.2em;
+    height: 50%;
+    width: 50%;
+    text-shadow: 1px 8px 8px #000000bd;
+}
+
+select{
     text-decoration: none;
     border: none;
-    background-color: rgba(240, 255, 255, 0);
-    width: 7vw;
+    background-color: #f0ffff00;
+    width: 8vw;
 }
+
 
 select:hover {
     background-color: #4e788a;
-    width: 7vw;
 }
 
-option,
-label {
+option{
     border: none;
 }
 
