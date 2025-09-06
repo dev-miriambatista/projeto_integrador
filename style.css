@@ -4,28 +4,32 @@
 
 body {
     margin: 0;
-        width: 100vw;
-      height: 100vh;
-        background-color: #e0e0e0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 #logo {
     display: flex;
-    width: 10vw;
+    width: 15vw;
 }
 
 header {
-    width: 80vw;
     display: flex;
-    margin: 2% auto 4% auto;
+    width: 80vw;
+    margin: 2% auto 1% auto;
     color: #1a1717;
+    align-items: center;
+    background-color: #1789e536;
+    padding: 1%;
+    border-radius: 0.5em;
 }
 
-h1{
+h1 {
     font: normal bolder 1.5em Arial, sans-serif;
     text-align: center;
     width: 90%;
@@ -37,7 +41,7 @@ h1{
     display: flex;
     justify-content: flex-end;
     width: 80vw;
-    color:#ffffff
+    color: #ffffff
 }
 
 .item_menu {
@@ -47,12 +51,6 @@ h1{
     border-style: none;
     border-radius: 0.5em;
     margin-left: 3vw;
-<<<<<<< HEAD
-    color:#ffffff
-=======
-    width: 8vw;
-
->>>>>>> f8c8532 (Adicionar nova página de produto com formulário e estilização; atualizar dashboard com ícones e informações dinâmicas)
 }
 
 .item_menu:hover {
@@ -63,6 +61,7 @@ h1{
     height: 2vh;
     color: #ffffff;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -76,6 +75,7 @@ a:hover {
 
 main {
     display: flex;
+    flex-direction: row;
     width: 78vw;
     background-color: #ffffff;
     border-radius: 0.7em;
@@ -126,28 +126,28 @@ main {
 }
 
 #btn_total_produtos {
-    background-color: #b0ff60;
+    background-image: linear-gradient(to top, #baf87d, #b1f7c0);
     list-style: none;
 }
 
 #btn_vendas_hoje {
-    background-color: #50d3ff;
+    background-image: linear-gradient(to top, #50d3ff, #afdff3);
 }
 
 #btn_fornecedores {
-    background-color: #fa57c4;
+    background-image: linear-gradient(to top, #fa57c4, #f1abd2);
 }
 
 #btn_pedidos_pendentes {
-    background-color: #f8c058;
+    background-image: linear-gradient(to top, #ffb347, #e7cc79);
 }
 
 #btn_movimentacoes {
-    background-color: #a657ff;
+    background-image: linear-gradient(to top, #a657ff, #daa0f3);
 }
 
 #btn_alerta_estoque {
-    background-color: #ff4848;
+    background-image: linear-gradient(to top, #ff4848, #f3b19d);
 }
 
 .header_card_dashboard {
@@ -155,8 +155,9 @@ main {
     width: 90%;
     align-items: center;
     font-family: Outfit, sans-serif;
-    
+
 }
+
 .card_item_dashboard {
     font: normal bolder 2em Outfit, sans-serif;
     width: 20vw;
@@ -166,6 +167,7 @@ main {
     align-items: center;
     margin: 0;
 }
+
 .bi {
     padding: 3%;
     font-size: 4em;
@@ -175,7 +177,7 @@ main {
     text-shadow: 1px 8px 8px #000000bd;
 }
 
-select{
+select {
     text-decoration: none;
     border: none;
     background-color: #f0ffff00;
@@ -187,7 +189,92 @@ select:hover {
     background-color: #4e788a;
 }
 
-option{
+option {
     border: none;
 }
 
+@media (max-width: 600px) {
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        width: 95vw;
+        flex-direction: row;
+        /* Stack children vertically */
+        align-items: center;
+        text-align: center;
+        margin: 2% auto 1% auto;
+        margin-bottom: 0;
+    }
+
+
+    #logo {
+        width: 40vw;
+        margin-bottom: 3%;
+    }
+
+    .container_menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item_menu {
+        font: normal normal 1em arial;
+        padding: 3%;
+        margin: 1%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: auto;
+        padding: 0%;
+    }
+
+    .container_dashboard {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .container_dashboard ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .item_dashboard {
+        width: 30%;
+        height: auto;
+        margin-bottom:3%;
+    }
+
+    .botao__dashboard {
+    display: flex;
+        width: 27vw;
+        height: 20vh;
+        margin: 5px;
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.1em;
+        align-content: center;
+        align-items: center;
+    }
+
+    .card_item_dashboard {
+        font: normal bolder 1em Outfit, sans-serif;
+        justify-content: center;
+    }
+
+    .bi {
+        font-size: 3em;
+        padding: 0;
+    }
+
+}
