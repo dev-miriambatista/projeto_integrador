@@ -111,6 +111,7 @@ main {
 }
 
 .botao__dashboard {
+    display: flex;
     font: normal normal 0.8em Arial, sans-serif;
     color: #1a1717;
     width: 20vw;
