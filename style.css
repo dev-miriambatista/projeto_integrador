@@ -2,6 +2,17 @@
     font-family: Arial;
 }
 
+header {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    /* Stack children vertically */
+    align-items: center;
+    text-align: center;
+    margin: 2% auto 1% auto;
+    margin-bottom: 0;
+}
+
 body {
     margin: 0;
     width: 100vw;
@@ -13,91 +24,31 @@ body {
     overflow-x: hidden;
 }
 
-#logo {
-    display: flex;
-    width: 15vw;
-}
-
-header {
-    display: flex;
-    width: 80vw;
-    margin: 2% auto 1% auto;
-    color: #1a1717;
-    align-items: center;
-    background-color: #1789e536;
-    padding: 1%;
-    border-radius: 0.5em;
-}
-
-h1 {
-    font: normal bolder 1.5em Arial, sans-serif;
-    text-align: center;
-    width: 90%;
-    margin-left: 5%;
-    text-shadow: 1px 1px 2px #00000080;
-}
-
-.container_menu {
-    display: flex;
-    justify-content: flex-end;
-    width: 80vw;
-    color: #ffffff
-}
-
-.item_menu {
-    list-style: none;
-    font: normal normal 0.8em arial;
-    padding: 1%;
-    border-style: none;
-    border-radius: 0.5em;
-    margin-left: 3vw;
-}
-
-.item_menu:hover {
-    background-color: #4e788a;
-    color: blanchedalmond;
-    transform: scale(1.1);
-    margin-left: 3vw;
-    height: 2vh;
-    color: #ffffff;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    list-style: none;
-    transition: all 0.3s ease;
-
-}
-
 main {
     display: flex;
     flex-direction: row;
-    width: 78vw;
+    width: 80%;
     background-color: #ffffff;
     border-radius: 0.7em;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     box-shadow: 5px 1px 5px #9b9da1;
     text-shadow: 1px 1px 2px #00000080;
 }
 
 .container_dashboard {
     display: flex;
-    width: 70vw;
+    width: 80%;
     height: 55vh;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     column-gap: 5vw;
 }
 
 .container_dashboard ul {
     display: flex;
-    width: 87%;
+    width: 70%;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
@@ -115,7 +66,7 @@ main {
     font: normal normal 0.8em Arial, sans-serif;
     color: #1a1717;
     width: 20vw;
-    height: 22vh;
+    height: 25vh;
     border-radius: 0.7em;
     border-style: none;
     list-style: none;
@@ -151,13 +102,6 @@ main {
     background-image: linear-gradient(to top, #ff4848, #f3b19d);
 }
 
-.header_card_dashboard {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    font-family: Outfit, sans-serif;
-
-}
 
 .card_item_dashboard {
     font: normal bolder 2em Outfit, sans-serif;
@@ -171,28 +115,14 @@ main {
 
 .bi {
     padding: 3%;
-    font-size: 4em;
+    font-size: 3em;
     border-radius: 0.2em;
     height: 50%;
     width: 50%;
     text-shadow: 1px 8px 8px #000000bd;
 }
 
-select {
-    text-decoration: none;
-    border: none;
-    background-color: #f0ffff00;
-    width: 8vw;
-}
 
-
-select:hover {
-    background-color: #4e788a;
-}
-
-option {
-    border: none;
-}
 
 @media (max-width: 600px) {
     body {
@@ -202,7 +132,7 @@ option {
 
     header {
         display: flex;
-        width: 95vw;
+        width: 80%;
         flex-direction: row;
         /* Stack children vertically */
         align-items: center;
@@ -213,12 +143,12 @@ option {
 
 
     #logo {
-        width: 40vw;
+        width: 25vw;
         margin-bottom: 3%;
     }
 
     .container_menu {
-        width: 100%;
+        width: 80%;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -232,31 +162,33 @@ option {
     main {
         display: flex;
         flex-direction: row;
-        width: 100vw;
+        width: 80%;
         height: auto;
         padding: 0%;
     }
 
     .container_dashboard {
-        width: 100%;
+        display: flex;
+        width: 80%;
         height: auto;
-        justify-content: center;
         padding: 0;
+        margin: 2%;
+        justify-content: flex-start;
     }
 
     .container_dashboard ul {
-        width: 100%;
+        width: 80%;
         justify-content: center;
     }
 
     .item_dashboard {
         width: 30%;
         height: auto;
-        margin-bottom:3%;
+        margin: 4%;
     }
 
     .botao__dashboard {
-    display: flex;
+        display: flex;
         width: 27vw;
         height: 20vh;
         margin: 5px;

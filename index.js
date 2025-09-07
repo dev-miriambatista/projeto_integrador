@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Atualiza o card de movimentações de estoque
   function atualizarCardMovimentacoes() {
     document.querySelector("#info_movimentacoes").textContent =
-      `${movimentacoes.length} Movimentações`;
+      `${movimentacoes.length} Entradas/Saídas`;
   }
 
   // Atualiza o card de alertas de estoque baixo (<= 5 unidades)

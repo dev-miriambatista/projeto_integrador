@@ -1,11 +1,23 @@
-form{
+body {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+form{
+    display: flex;
+    max-width: auto;
     margin: 0 auto;
     padding: 1rem;
-    border: 1px solid #ddd;
     border-radius: 0.5em;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 80%;
 }
 
 /*input e select está no style.css. linhas 148 e 155 */
@@ -13,20 +25,18 @@ imput {
     text-decoration: none;
     border: none;
     background-color: rgba(240, 255, 255, 0);
-    width: 60vw;
+    width: 70%;
     
 }
 input:hover {
     background-color: #4e788a;
-   
     transition: 0.7s ease;
 }
 
 label {
-    display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    width: 60vw;
+    width: 70%;
 }
 button {
     background-color: #3498db;
