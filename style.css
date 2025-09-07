@@ -4,7 +4,9 @@
 
 @font-face {
     font-family: 'Soleil';
-    src: url('res/Soleil.woff2') format('woff2');
+    src: url('/fornecedor/res/Soleil.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
