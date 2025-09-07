@@ -9,7 +9,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="/produtos/produtos.css">
+    <link rel="stylesheet" href="header.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js" defer></script>
 
@@ -24,7 +25,7 @@
         <ul class="container_dashboard">
 
             <li class="item_dashboard">
-                <a href="produtos.html"><button class="botao__dashboard" id="btn_total_produtos">
+                <a href="/produtos/produtos.html"><button class="botao__dashboard" id="btn_total_produtos">
 
                     <i class="bi bi-boxes"></i>
                     <p class="card_item_dashboard" id="info_total_produtos"></p>
@@ -42,7 +43,7 @@
             </li>
 
             <li class="item_dashboard">
-                <a href="fornecedor.html"></a></A><button class="botao__dashboard" id="btn_total_fornecedores">
+                <a href="/fornecedor/fornecedor.html"></a><button class="botao__dashboard" id="btn_total_fornecedores">
 
                     <i class="bi bi-truck"></i>
                     <p class="card_item_dashboard" id="info_total_fornecedores"></p>
@@ -60,10 +61,10 @@
             </li>
 
             <li class="item_dashboard">
-                <button class="botao__dashboard" id="btn_movimentacoes">
+                <button class="botao__dashboard" id="btn_prazo_de_validade">
 
                     <i class="bi bi-arrow-repeat"></i>
-                    <p class="card_item_dashboard" id="info_movimentacoes"></p>
+                    <p class="card_item_dashboard" id="info_prazo_de_validade"></p>
 
                 </button>
             </li>
@@ -79,6 +80,9 @@
 
         </ul>
     </main>
+
+
+    
     <script>
         fetch("header.html")
             .then(response => {
@@ -94,9 +98,9 @@
             .catch(error => {
                 console.error("Erro no fetch:", error);
             });
-
-
     </script>
+
+
 </body>
 <footer>
     <p>capEstoque</p>

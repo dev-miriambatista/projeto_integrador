@@ -8,10 +8,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="produtos.css">
-    <link rel="stylesheet" href="novo_produto.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/produtos/produtos.css">
+    <link rel="stylesheet" href="/novo_produto/novo_produto.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js" defer></script>
 
@@ -54,11 +54,14 @@
             <label for="qtda_minima">Quantidade Mínima:</label>
             <input type="number" id="qtda_minima" name="qtda_minima" required>
 
+            <label for="prazo_validade">Prazo de Validade:</label>
+            <input type="date" id="prazo_validade" name="prazo_validade" required>
+
             <button type="submit">Adicionar Produto</button>
         </form>
     </main>
     <script>
-      fetch("header.html")
+      fetch("/header.html")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Erro ao carregar o header: " + response.status);

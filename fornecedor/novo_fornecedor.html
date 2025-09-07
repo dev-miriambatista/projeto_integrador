@@ -8,13 +8,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="produtos.css">
-    <link rel="stylesheet" href="novo_produto.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js" defer></script>
-
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/produtos/produtos.css">
+    <link rel="stylesheet" href="/novo_produto/novo_produto.css">
+    <link rel="stylesheet" href="/fornecedor/fornecedor.css">
+    <link rel="stylesheet" href="/novo_fornecedor/novo_fornecedor.css">
+   
 
     <title>capEstoque</title>
 </head>
@@ -25,7 +25,7 @@
 
     <main>
 
-        <form action="/fornecedor.html" method="GET">
+        <form action="/fornecedor/fornecedor.html" method="GET">
             <h1>Novo Fornecedor</h1>
             <label for="nome">Nome do fornecedor:</label>
             <input type="text" id="nome" name="nome" required>
@@ -54,8 +54,10 @@
             <button type="submit">Adicionar Fornecedor</button>
         </form>
     </main>
+
+
     <script>
-        fetch("header.html")
+        fetch("/header.html")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Erro ao carregar o header: " + response.status);
@@ -72,6 +74,12 @@
 
 
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="/fornecedor/fornecedor.js"></script>
+    <script src="fornecedor/fornecedor.js"></script>
+
 </body>
 
 </html>

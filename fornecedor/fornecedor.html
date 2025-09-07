@@ -8,29 +8,35 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/produtos/produtos.css">
+    <link rel="stylesheet" href="/novo_produto/novo_produto.css">
     <link rel="stylesheet" href="fornecedor.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js" defer></script>
+    <script src="/index.js" defer></script>
+    <script src="/fornecedor/fornecedor.js"></script>
 
     <title>capEstoque</title>
 </head>
+
 <body>
-    <div id="header"></i></div>
+    <div id="header"></div>
     <main>
         <div id="container_fornecedores">
 
-            <h1>Lista de Fornecedores<a href="adicionar_fornecedor.html"><i class="bi bi-person-add"></i></a></h1>
-            </div>
-            <ul id="fornecedores-list" class="lista-estilizada">
-            </ul>
-          
+            <h1>Lista de Fornecedores</h1>
+            <a href="/fornecedor/novo_fornecedor.html" id="adicionar_fornecedor" title="Adicionar novo fornecedor">
+                <i class="bi bi-person-add"></i>
+            </a>
         </div>
-    </main>
+        <ul id="fornecedores-list" class="lista-estilizada">
+        </ul>
 
+        
+    </main>
     <script>
-        fetch("header.html")
+        fetch("/header.html")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Erro ao carregar o header: " + response.status);
@@ -46,9 +52,6 @@
             });
 
     </script>
-
-    <script src="index.js"></script>
-    <script src="fornecedor.js"></script>
 
     <footer>
         <p>Criado por capEstoque</p>
