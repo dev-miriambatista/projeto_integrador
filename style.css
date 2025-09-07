@@ -2,6 +2,11 @@
     font-family: Arial;
 }
 
+@font-face {
+    font-family: 'Soleil';
+    src: url('res/Soleil.woff2') format('woff2');
+}
+
 header {
     display: flex;
     width: 80%;
